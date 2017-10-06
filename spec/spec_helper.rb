@@ -1,3 +1,9 @@
+require_relative "../lib/order"
+require_relative "../lib/orderline"
+require_relative "../lib/order_factory"
+require_relative "../lib/tax_rate"
+require_relative "../lib/services/order_exporter_service"
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

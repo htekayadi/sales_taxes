@@ -82,10 +82,15 @@ Sales Taxes: 6.70
 Total: 74.68
 
 ## CSV File Output
-Application will generate a CSV file at directory tmp
+```
+Application will generate a CSV file at directory "tmp"
+with file format "sales_taxes_yyyy-mm-dd_HH_MM_SS_Z.csv"
 
 # Example
-sales_taxes_2017-10-06_16_42_26_0800.csv
+tmp/sales_taxes_2017-10-06_16_42_26_0800.csv
+
+```
+
 
 ## Setup
 ```

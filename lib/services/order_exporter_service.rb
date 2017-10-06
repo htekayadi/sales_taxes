@@ -30,5 +30,6 @@ class OrderExporterService
     file_name = Utils.sanitize_filename("sales_taxes_#{Time.now.to_s}.csv")
 
     File.open("tmp/#{file_name}", 'w') { |f| f.write(content) }
+    content
   end
 end
