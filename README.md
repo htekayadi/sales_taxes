@@ -81,6 +81,11 @@ Total: 65.15
 Sales Taxes: 6.70
 Total: 74.68
 
+## CSV File Output
+Application will generate a CSV file at directory tmp
+
+# Example
+sales_taxes_2017-10-06_16_42_26_0800.csv
 
 ## Setup
 ```

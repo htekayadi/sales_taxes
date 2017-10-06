@@ -1,3 +1,5 @@
+require_relative './services/order_exporter_service'
+
 class OrderPrinter
   def self.call(order:)
     new(order).call
@@ -10,12 +12,7 @@ class OrderPrinter
   end
 
   def call
-    order.orderlines.each do |orderline|
-      puts "#{orderline.quantity}, #{orderline.product_name}, #{'%.2f' % orderline.total_price}"
-    end
-
-    puts "\n"
-    puts "Sales Taxes: #{'%.2f' % order.total_taxes}"
-    puts "Total: #{'%.2f' % order.total_price}"
+    OrderExporterService.to_csv(order)
   end
+
 end
